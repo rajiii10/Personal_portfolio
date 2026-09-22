@@ -9,7 +9,7 @@ import {
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-import resume from "../assets/resume.pdf";
+import resume from "../assets/Resume.pdf";
 import profile from "../assets/Profile.jpg";
 import profile1 from "../assets/Profile1.jpeg";
 

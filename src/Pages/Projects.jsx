@@ -1,13 +1,9 @@
 import { motion } from "framer-motion";
-
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
-import cravecart from "../assets/project1.png";
-
-import smartHire from "../assets/project2.jpg";
-
-import library from "../assets/projects2.jpeg";
-
+import cravecart from "../assets/Project1.png";
+import smartHire from "../assets/Project2.jpg";
+import library from "../assets/Projects2.jpeg";
 import ecommerce from "../assets/Project4.png";
 
 function Projects() {
@@ -20,7 +16,6 @@ function Projects() {
       tech: "Java • Spring Boot • React • MySQL",
       github: true,
     },
-
     {
       title: "Smart Hire",
       image: smartHire,
@@ -29,7 +24,6 @@ function Projects() {
       tech: "Java • Spring Boot • React • MySQL",
       github: true,
     },
-
     {
       title: "Library Management System",
       image: library,
@@ -38,7 +32,6 @@ function Projects() {
       tech: "Java • Spring Boot • React • MySQL",
       github: true,
     },
-
     {
       title: "E-Commerce",
       image: ecommerce,
@@ -51,9 +44,7 @@ function Projects() {
 
   return (
     <section className="projects" id="projects">
-
       <div className="section-heading">
-
         <p>MY WORK</p>
 
         <h2>
@@ -65,13 +56,10 @@ function Projects() {
         <small>
           A collection of projects built with modern web technologies.
         </small>
-
       </div>
 
       <div className="project-container">
-
         {projects.map((project, index) => (
-
           <motion.div
             className="project-card"
             key={project.title}
@@ -83,22 +71,15 @@ function Projects() {
               delay: index * 0.1,
             }}
           >
-
             <div className="project-image">
-
-              <img
-                src={project.image}
-                alt={project.title}
-              />
+              <img src={project.image} alt={project.title} />
 
               <div className="project-number">
                 0{index + 1}
               </div>
-
             </div>
 
             <div className="project-content">
-
               <h3>{project.title}</h3>
 
               <p>{project.description}</p>
@@ -119,15 +100,10 @@ function Projects() {
                   <FaExternalLinkAlt />
                 </a>
               )}
-
             </div>
-
           </motion.div>
-
         ))}
-
       </div>
-
     </section>
   );
 }
